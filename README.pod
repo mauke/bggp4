@@ -1,0 +1,53 @@
+=head1 BGGP4 submissions
+
+From L<https://binary.golf/>:
+
+=over
+
+B<Goal>
+
+Create the smallest self-replicating file.
+
+B<Requirements>
+
+A valid submission will:
+
+=over
+
+=item *
+
+Produce exactly 1 copy of itself
+
+=item *
+
+Name the copy "4"
+
+=item *
+
+Not execute the copied file
+
+=item *
+
+Print, return, or display the number 4
+
+=back
+
+=back
+
+To run:
+
+=for highlighter language=sh
+
+    sh 'sh/eval printf>4 \$0;ls 4'
+
+    cc -xc poly/bggp.lhs && ./a.out
+
+    ghc -package process poly/bggp.lhs && ./poly/bggp
+
+    make -f poly/bggp.lhs
+
+    sh poly/bggp.lhs
+
+    perl poly/bggp.lhs
+
+    python3 poly/bggp.lhs
